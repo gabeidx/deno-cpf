@@ -17,7 +17,7 @@ export function validate(cpf: number | string): boolean {
 		// Must be 11 non-digit characters
 		value.length !== 11 ||
 		// Must be non-repeating digits
-		RegExp(`^${value.charAt(0)}+$`).test(value)
+		/^(\d)\1+$/.test(value)
 	) {
 		return false
 	}
