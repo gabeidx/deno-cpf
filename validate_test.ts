@@ -3,15 +3,17 @@ import { assertEquals } from 'https://deno.land/std@0.86.0/testing/asserts.ts'
 import { validate } from './validate.ts'
 
 Deno.test('validate() returns true on valid formatted CPFs', () => {
-	assertEquals(validate('100.495.526-00'), true)
-	assertEquals(validate('608.608.396-72'), true)
-	assertEquals(validate('507.657.876-87'), true)
+	assertEquals(validate('363.552.510-30'), true)
+	assertEquals(validate('784.128.565-54'), true)
+	assertEquals(validate('411.466.057-73'), true)
+	assertEquals(validate('386.000.358-56'), true)
 })
 
 Deno.test('validate() returns true on valid unformatted CPFs', () => {
-	assertEquals(validate(10049552600), true)
-	assertEquals(validate('60860839672'), true)
-	assertEquals(validate('50765787687'), true)
+	assertEquals(validate('36355251030'), true)
+	assertEquals(validate('78412856554'), true)
+	assertEquals(validate(41146605773), true)
+	assertEquals(validate(38600035856), true)
 })
 
 Deno.test('validate() returns false on invalid formatted CPFs', () => {

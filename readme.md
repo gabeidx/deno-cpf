@@ -7,10 +7,10 @@ Format, validate and generate CPF numbers.
 import { validate, format, generate } from 'https://deno.land/x/cpf/mod.ts'
 
 // Validation
-const valid = validate('100.496.526-00'); // true
+const valid = validate('363.552.510-30'); // true
 
 // Formating
-const formatted = format(10049552600) // 100.495.526-00
+const formatted = format(36355251030) // 363.552.510-30
 
 // Generation
 const generated = generate(); // randomly generated, valid CPF
