@@ -2,7 +2,6 @@
 
 Format, validate and generate CPF numbers.
 
-
 ```ts
 import { validate, format, generate } from 'https://deno.land/x/cpf/mod.ts'
 
